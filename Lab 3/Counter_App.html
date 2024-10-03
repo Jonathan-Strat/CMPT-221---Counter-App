@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title> Counter App </title>
+		<meta charset="UTF-8">
+		<link href="style3.css" rel="stylesheet" />
+	</head>
+		
+	<body>
+		<div id="box">
+			<h1 id="title"> Counter App </h1>
+
+			<div id="counter"> 
+				<p id="count"></p>
+			</div>
+	
+			<div id="buttons">
+				<p> <button style="background-color: green" class="button" onclick="addition()"> Add </button>
+				<p> <button style="background-color: red" class="button" onclick="subtraction()"> Subtract </button>
+				<p> <button style="background-color: darkGrey" class="button" onclick="reset()"> Reset </button>
+			</div>
+		</div>
+	<footer>
+		<hr>
+		<small>&copy Jonathan Strathausen, 10-02-2024</small>
+	</footer>
+	
+	<script>
+		var counter = 0;
+		var number = document.getElementById("counter");
+		number.textContent = counter;
+		function addition() {
+			counter += 1;
+			if (counter == 10000) {
+				number.textContent = "Get a Job";
+			}
+			else {
+				number.textContent = counter;
+			}
+		}
+		function subtraction() {
+			counter -= 1;
+			if (counter == -10000) {
+				number.textContent = "Get a Job";
+			}
+			else {
+				number.textContent = counter;
+			}
+		}
+		function reset() {
+			counter = 0;
+			number.textContent = counter;
+		}
+	</script>
+	</body>
+</html>

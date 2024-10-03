@@ -1,0 +1,53 @@
+﻿*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+    color: black;
+    padding: 15px;
+    font: 18px 'Montserrat';
+    letter-spacing: .01em;
+    line-height: 0.6;
+    margin-top: 100px;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+footer {
+    color: #3b3b3b;
+    text-align: center;
+}
+div#box {
+    background-color: tan;
+    border: 5px solid black;
+}
+div#counter {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    color: black;
+    background-color: tan;
+    text-align: center;
+    font: 40px 'Montserrat';
+}
+div#buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.button {
+    border-radius: 2px;
+    padding: 5px;
+    font: 20px 'Montserrat';
+}
+h1#title {
+    text-align: center;
+}
